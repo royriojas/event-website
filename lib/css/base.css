@@ -1,0 +1,183 @@
+html, body {
+  margin:0;
+  padding:0;
+  background:#000 url(assets/bg.png) 50% 0% no-repeat ;
+  font-family: 'Cantarell', arial, serif;
+}
+.page {
+  width:780px;
+  margin:0 auto;
+  padding-bottom:50px;
+}
+.header {
+  height:210px;
+  color:#fff;
+}
+ul.tab-content {
+  background: rgba(255,255,255,0.6);
+  min-height:500px;
+  width:695px;
+  margin:0 auto;
+  z-index:1;
+  padding:25px 0 20px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  
+}
+ul.tab-header {
+  border:3px solid #5a0c10;
+  border-radius:15px;
+  -webkit-box-shadow: 5px 5px 5px #000000;
+  -moz-box-shadow: 5px 5px 5px #000000;
+  box-shadow: 5px 5px 5px #000000;
+  z-index:2;
+  position:relative;
+  margin:0 auto;
+  width:730px;
+}
+ul.tab-header li {
+  cursor:pointer;
+  display:inline-block;
+  height:50px;
+  line-height:50px;
+  min-width:181px;
+  text-align:center;
+  border-left:3px solid #5a0c10;
+  margin-right:-5px;
+  background: #D23D42;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #D23D42 0%, #D11D23 18%, #6A191B 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D23D42), color-stop(18%,#D11D23), color-stop(100%,#6A191B));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #D23D42 0%,#D11D23 18%,#6A191B 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #D23D42 0%,#D11D23 18%,#6A191B 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #D23D42 0%,#D11D23 18%,#6A191B 100%);
+  /* IE10+ */
+  filter: progid
+  :DXImageTransform.Microsoft.gradient( startColorstr='#D23D42', endColorstr='#6A191B',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, #D23D42 0%,#D11D23 18%,#6A191B 100%);
+  /* W3C */
+}
+ul.tab-header li.first {
+  border:none;
+}
+ul.tab-header li:first-of-type, ul.tab-header li:last-of-type {
+  border-radius:10px;
+}
+ul.tab-header li:last-of-type {
+  border-top-left-radius:0 0;
+  border-bottom-left-radius:0 0;
+}
+ul.tab-header li:first-of-type {
+  border-top-right-radius:0 0;
+  border-bottom-right-radius:0 0;
+}
+ul.tab-header li a {
+  text-decoration:none;
+  color:#fff;
+  font-size:16px;
+  /*font-family: 'Cabin', arial, serif;*/
+  
+}
+ul.tab-header li.hover, ul.tab-header li.selected {
+  background: #6A191B;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #6A191B 0%, #D11D23 81%, #D23D42 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6A191B), color-stop(81%,#D11D23), color-stop(100%,#D23D42));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #6A191B 0%,#D11D23 81%,#D23D42 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #6A191B 0%,#D11D23 81%,#D23D42 100%);
+  /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #6A191B 0%,#D11D23 81%,#D23D42 100%);
+  /* IE10+ */
+  filter: progid
+  :DXImageTransform.Microsoft.gradient( startColorstr='#6A191B', endColorstr='#D23D42',GradientType=0 );
+  /* IE6-9 */
+  background: linear-gradient(top, #6A191B 0%,#D11D23 81%,#D23D42 100%);
+  /* W3C */
+}
+a.logo {
+  text-decoration: none;
+  display:block;
+  position:absolute;
+  width:229px;
+  height:174px;
+  background:url(assets/logo.png) no-repeat center center;
+  top:20px;
+}
+a.logo span {
+  display:none;
+}
+
+
+.section {
+  width: 655px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.6);
+  min-height: 500px;
+  border-radius: 15px;
+}
+
+.header {
+  position: relative;
+}
+
+.event-date{
+  position: absolute;
+  right:20px;
+  top:30px;
+  width:100px;
+  height:100px;
+}
+.event-date p.big {
+  font-family: 'Cabin', serif;
+  font-size: 70px;
+  line-height: 56px;
+  color:#c32529;
+} 
+
+.event-location {
+  text-align: right;
+  position: absolute;
+  width: 500px;
+  right: 134px;
+  top: 28px;
+  font-size:18px;
+  color: #c32529;
+  padding-right: 15px;
+  border-right: 2px solid #999;
+}
+
+.event-time {
+  color:#fff;
+  font-size:20px;
+}
+
+
+.slogan {
+  padding: 20px;
+  width:400px;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  bottom:5px;
+  right: 30px;
+  text-align: right;
+  font-size: 18px;
+  
+  
+}
+
+
+
+
+
+
+
+
+
