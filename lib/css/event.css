@@ -1,0 +1,16 @@
+.section div.event{
+    float: left;
+    margin-top: 66px;
+    width: 280px;
+    font-size: 15px;
+}
+
+    .section div.left{
+        margin-left: 35px;
+        margin-right: 10px;
+    }
+    
+    .section div.right{
+        margin-left: 10px;
+        margin-right: 30px;
+    }
