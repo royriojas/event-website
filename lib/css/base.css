@@ -140,6 +140,7 @@ a.logo span {
   min-height: 500px;
   border-radius: 15px;
   -moz-border-radius: 15px;
+  padding: 1px;
 }
 
 .header {
