@@ -1,0 +1,8 @@
+div.speech{
+    width: 120px;
+    height: 120px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    float: left;
+    margin: 21px;
+}
