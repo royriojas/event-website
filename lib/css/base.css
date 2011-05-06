@@ -15,6 +15,7 @@ html, body {
 }
 ul.tab-content {
   background: rgba(255,255,255,0.6);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#99ffffff',GradientType=0 );
   min-height:500px;
   width:695px;
   margin:0 auto;
@@ -56,8 +57,7 @@ ul.tab-header li {
   /* Opera11.10+ */
   background: -ms-linear-gradient(top, #D23D42 0%,#D11D23 18%,#6A191B 100%);
   /* IE10+ */
-  filter: progid
-  :DXImageTransform.Microsoft.gradient( startColorstr='#D23D42', endColorstr='#6A191B',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D23D42', endColorstr='#6A191B',GradientType=0 );
   /* IE6-9 */
   background: linear-gradient(top, #D23D42 0%,#D11D23 18%,#6A191B 100%);
   /* W3C */
@@ -81,8 +81,20 @@ ul.tab-header li a {
   color:#fff;
   font-size:16px;
   /*font-family: 'Cabin', arial, serif;*/
-  
 }
+
+.ie6 ul.tab-header li, 
+.ie7 ul.tab-header li {
+  float:left;
+  width:184px;
+}
+.ie6 ul.tab-content li
+.ie7 ul.tab-content li {
+  height:0; overflow: visible;
+}
+
+
+
 ul.tab-header li.hover, ul.tab-header li.selected {
   background: #6A191B;
   /* Old browsers */
@@ -96,8 +108,7 @@ ul.tab-header li.hover, ul.tab-header li.selected {
   /* Opera11.10+ */
   background: -ms-linear-gradient(top, #6A191B 0%,#D11D23 81%,#D23D42 100%);
   /* IE10+ */
-  filter: progid
-  :DXImageTransform.Microsoft.gradient( startColorstr='#6A191B', endColorstr='#D23D42',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6A191B', endColorstr='#D23D42',GradientType=0 );
   /* IE6-9 */
   background: linear-gradient(top, #6A191B 0%,#D11D23 81%,#D23D42 100%);
   /* W3C */
@@ -110,6 +121,7 @@ a.logo {
   height:174px;
   background:url(assets/logo.png) no-repeat center center;
   top:20px;
+  left:8px;
 }
 a.logo span {
   display:none;
@@ -120,6 +132,7 @@ a.logo span {
   width: 655px;
   margin: 0 auto;
   background: rgba(255,255,255,0.6);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#99ffffff',GradientType=0 );
   min-height: 500px;
   border-radius: 15px;
 }
@@ -164,6 +177,7 @@ a.logo span {
   padding: 20px;
   width:400px;
   background: rgba(0,0,0,0.5);
+  
   position: absolute;
   bottom:5px;
   right: 30px;
