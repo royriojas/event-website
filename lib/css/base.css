@@ -23,11 +23,13 @@ ul.tab-content {
   padding:25px 0 20px 0;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  -moz-border-radius:0 0 15px 15px;
   
 }
 ul.tab-header {
   border:3px solid #5a0c10;
   border-radius:15px;
+  -moz-border-radius:15px;
   -webkit-box-shadow: 5px 5px 5px #000000;
   -moz-box-shadow: 5px 5px 5px #000000;
   box-shadow: 5px 5px 5px #000000;
@@ -41,7 +43,7 @@ ul.tab-header li {
   display:inline-block;
   height:50px;
   line-height:50px;
-  min-width:181px;
+  min-width:145px;
   text-align:center;
   border-left:3px solid #5a0c10;
   margin-right:-5px;
@@ -69,12 +71,14 @@ ul.tab-header li:first-of-type, ul.tab-header li:last-of-type {
   border-radius:10px;
 }
 ul.tab-header li:last-of-type {
-  border-top-left-radius:0 0;
-  border-bottom-left-radius:0 0;
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
+  -moz-border-radius:0 10px 10px 0;
 }
 ul.tab-header li:first-of-type {
-  border-top-right-radius:0 0;
-  border-bottom-right-radius:0 0;
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  -moz-border-radius:10px 0 0 10px;
 }
 ul.tab-header li a {
   text-decoration:none;
@@ -86,7 +90,7 @@ ul.tab-header li a {
 .ie6 ul.tab-header li, 
 .ie7 ul.tab-header li {
   float:left;
-  width:184px;
+  width:149px;
 }
 .ie6 ul.tab-content li
 .ie7 ul.tab-content li {
@@ -135,6 +139,7 @@ a.logo span {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#99ffffff',GradientType=0 );
   min-height: 500px;
   border-radius: 15px;
+  -moz-border-radius: 15px;
 }
 
 .header {
@@ -190,7 +195,9 @@ a.logo span {
     font-weight: bold;
 }
 
-
+.section {
+  padding:1px;
+}
 
 
 
