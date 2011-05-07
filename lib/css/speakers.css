@@ -4,31 +4,24 @@ div.speaker {
   -moz-border-radius:10px;
   font-size: 12px;
   margin: 20px;
+  padding:20px;
 }
 div.speaker div.photo-right {
   float: right;
-  padding-top: 40px;
 }
 div.speaker div.photo-left {
   float: left;
-  padding-top: 40px;
 }
 div.speaker img {
-  width: 150px;
-  height: 150px;
-  margin: 30px
+  
 }
 div.speaker div.description-right {
-  margin: 0 210px 0 25px;
-  text-align: right;
-  padding: 20px 0;
+  
 }
 div.speaker div.description-left {
-  margin: 0 25px 0 210px;
-  text-align: left;
-  padding: 20px 0;
+  
 }
 div.speaker p.name {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 26px;
 }
