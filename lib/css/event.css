@@ -1,16 +1,27 @@
-.section div.event{
-    float: left;
-    margin-top: 66px;
-    width: 280px;
-    font-size: 15px;
+.section .event {
+  float: left;
+  margin-top: 25px;
+  width: 280px;
+  font-size: 15px;
 }
 
-    .section div.left{
-        margin-left: 35px;
-        margin-right: 10px;
-    }
-    
-    .section div.right{
-        margin-left: 10px;
-        margin-right: 30px;
-    }
+.event p {
+  text-align:justify;
+  margin:20px 0;
+}
+
+.section .left {
+  margin-left: 35px;
+  margin-right: 10px;
+}
+.section .right {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.logo-avantica {
+  background: url(assets/avantica-logo.png) no-repeat center center;
+  width:223px;
+  height:85px;
+  margin:30px auto;
+}

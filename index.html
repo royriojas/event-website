@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html class="ie6 ie" > <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7 ie" > <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8 ie" > <![endif]-->
+<!--[if lt IE 7 ]> <html class="ie6 ie not-ready" > <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7 ie not-ready" > <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 ie not-ready" > <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html>
+<html class="not-ready">
   <!--<![endif]-->
   <head>
-    <title>Business Goes Mobile</title><meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <!-- Always force latest IE rendering engine (even in intranet) & Chrome
-    Frame--><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Business Goes Mobile</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" type="text/css" href="lib/css/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Cabin:regular,bold' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cantarell:regular,bold' rel='stylesheet' type='text/css'>
-    <!-- Mobile viewport optimized: j.mp/bplateviewport --><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="lib/css/base.css">
     <link rel="stylesheet" type="text/css" href="lib/css/event.css">
     <link rel="stylesheet" type="text/css" href="lib/css/speakers.css">
-    <link rel="stylesheet" type="text/css" href="lib/css/agenda.css?11111">
+    <link rel="stylesheet" type="text/css" href="lib/css/agenda.css">
   </head>
   <body>
     <div class="page">
@@ -54,28 +55,28 @@
       </div>
       <div class="page-body">
         <div class="tab-viewer">
-          <ul class="tab-header curvyRedraw">
-            <li class="first">
+          <ul class="tab-header">
+            <li class="first" data-hash="home">
               <a href="">
               <span>HOME</span>
               </a>
             </li>
-            <li >
-              <a href="">
+            <li data-hash="evento">
+              <a href="" >
               <span>EL EVENTO</span>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li data-hash="panelistas">
+              <a href="" >
               <span>PANELISTAS</span>
               </a>
             </li>
-            <li>
+            <li data-hash="agenda">
               <a href="">
               <span>AGENDA</span>
               </a>
             </li>
-            <li class='last'>
+            <li class='last' data-hash="ubicacion">
               <a href="">
               <span>UBICACIÓN</span>
               </a>
@@ -87,20 +88,35 @@
             <li>
               <div class="section">
                 <div class="event left">
-                  <span class="bold">Avantica Technologies</span> le invita a un evento sin precedentes, en el cual expertos internacionales discutirán las últimas tendencias en tecnologías y aplicaciones móviles.
-                  Usted descubrirá las posibilidades que estas tecnologías ofrecen a las empresas para acercarse a sus clientes internos y externos, vender más, ser más productivas, agilizar servicios  y optimizar sus procesos.
-                  De acuerdo con la consultora Gartner, el mercado global de smartphones creció un 72% en el 2010, y el mercado peruano no es ajeno a esta tendencia. En el 2003 habían solamente 2,3 millones de usuarios de servicios móviles en el Perú,
+                  <p>
+                    <span class="bold">Avantica Technologies</span> le invita a un evento sin precedentes, en el cual expertos internacionales discutirán las últimas tendencias en tecnologías y aplicaciones móviles.
+                  </p>
+                  <p>
+                    Usted descubrirá las posibilidades que estas tecnologías ofrecen a las empresas para acercarse a sus clientes internos y externos, vender más, ser más productivas, agilizar servicios  y optimizar sus procesos.
+                  </p>
+                  <p>
+                    De acuerdo con la consultora Gartner, el mercado global de smartphones creció un 72% en el 2010, y el mercado peruano no es ajeno a esta tendencia. Algo que es bastante notorio en estos días.
+                  </p>
                 </div>
                 <div class="event right">
-                  para agosto del 2008 había un total de 18 millones y se proyecta que el 2011 va traer 13 millones de usuarios nuevos.
-                  Es claro que el auge y la oferta de estos dispositivos trae grandes oportunidades a las empresas que quieren acercarse a sus clientes, ser más visibles y ser más productivos.
-                  Independientemente de la rama de negocios a la que se dirija su empresa, hay una solución que la tecnología móvil le puede proporcionar, ya sea usando funcionalidades de geo-localización.
-                  <span class="bold">Avantica Technologies</span> le invita a un evento sin precedentes, en el cual expertos internacionales discutirán las últimas tendencias en tecnologías y aplicaciones móviles.
+                  <p>
+                    Ya en el 2003 habían solamente 2,3 millones de usuarios de servicios móviles en el Perú, para agosto del 2008 había un total de 18 millones y se proyecta que el 2011 va traer 13 millones de usuarios nuevos.
+                  </p>
+                  <p>
+                    Es claro que el auge y la oferta de estos dispositivos trae grandes oportunidades a las empresas que quieren acercarse a sus clientes, ser más visibles y ser más productivos.
+                  </p>
+                  <p>
+                    Independientemente de la rama de negocios a la que se dirija su empresa, hay una solución que la tecnología móvil le puede proporcionar, ya sea usando funcionalidades de geo-localización.
+                  </p>
+                </div>
+                <div style="clear:both"></div>
+                <div class="logo-avantica">
+                  
                 </div>
               </div>
             </li>
             <li>
-              <div class="section">
+              <div class="section speakers">
                 <div class="speaker">
                   <div class="photo-right">
                     <img src="./lib/img/MarioChaves.png">
@@ -113,14 +129,25 @@
                       Informático de profesión y con una maestría en ingenieria eléctrica en la Universidad de California, Davis. Cuenta con más de 25 años de experiencia en ingeniería de software y de gestión de ingeniería en Silicon Valley.
                     </p>
                     <p>
-                      Al inicio de su carrera laboró para Software Publishing Corporation, donde creó Harvard Graphics, que redefinió la categoría de software de gráficos de presentación y fue en gran parte responsable del crecimiento de la compañía de $20 millones a más de $ 100 millones en ingresos. Luego fue Director de Desarrollo de Productos de Intuit, donde lideró el desarrollo de nuevos productos para la línea de productos de Quicken y gestionó el desarrollo de Intuit's International Products.  Antes de fundar Avantica, trabajó como Jefe de tecnología de Babcock & Brown, una firma líder de banca de inversión, donde lideró un equipo de funcionarios distribuidos por todo el mundo y fue responsable de todas las estrategias de tecnología e implementación.
-                    </p><!--<p>En los últimos 10 años, Mario ha liderado el
-                    crecimiento de Avantica Technologies, una empresa de
-                    desarrollo de software y servicios de control de calidad
-                    enfocada en crear aplicaciones para otras compañías. Bajo su
-                    liderazgo, Avantica se ha convertido en uno de
-                    los principales proveedores en Latinoamerica de servicios de
-                    outsourcing para el mercado Norteamericano.</p>-->
+                      Al inicio de su carrera laboró para Software Publishing Corporation, donde creó Harvard Graphics, que redefinió la categoría de software de gráficos de presentación y fue en gran parte responsable del crecimiento de la compañía de $20 millones a más de $100 millones en ingresos.
+                    </p>
+                    <p>
+                      Pas&oacute; a ser Director de Desarrollo de Productos de Intuit, donde lideró el desarrollo de nuevos productos para la línea de productos de Quicken y gestionó el desarrollo de Intuit's International Products.
+                    </p>
+                    <p>
+                      Antes de fundar Avantica, trabajó como Jefe de tecnología de Babcock & Brown, una firma líder de banca de inversión, donde lideró un equipo de funcionarios distribuidos por todo el mundo y fue responsable de todas las estrategias de tecnología e implementación.
+                    </p>
+                    <p>
+                      En los últimos 10 años, Mario ha liderado el
+                      crecimiento de Avantica Technologies, una empresa de
+                      desarrollo de software y servicios de control de calidad
+                      enfocada en crear aplicaciones para otras compañías.
+                    </p>
+                    <p>
+                      Bajo su liderazgo, Avantica se ha convertido en uno de
+                      los principales proveedores en Latinoamerica de servicios de
+                      outsourcing para el mercado Norteamericano.
+                    </p>
                   </div>
                 </div>
                 <div class="speaker">
@@ -247,14 +274,11 @@
             </li>
             <li>
               <div class="section">
-
                 <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=211472431020783374417.0004a2a2d88a58158a670&amp;ll=-12.101767,-77.049952&amp;spn=0.014645,0.018239&amp;z=15&amp;output=embed">
                 </iframe>
-                <br />
-                <small>
-                  View
-                  <a href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=211472431020783374417.0004a2a2d88a58158a670&amp;ll=-12.101767,-77.049952&amp;spn=0.014645,0.018239&amp;z=15&amp;source=embed" style="color:#0000FF;text-align:left">Untitled</a> in a larger map
-                </small>
+                <p class="map-footer">
+                  <a href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=211472431020783374417.0004a2a2d88a58158a670&amp;ll=-12.101767,-77.049952&amp;spn=0.014645,0.018239&amp;z=15&amp;source=embed" style="color:#0000FF;text-align:left"> Ver en google maps </a>
+                </p>
               </div>
             </li>
           </ul>

@@ -1,27 +1,40 @@
-div.speaker {
-  background-color: #FFFFFF;
+.speaker {
+  background-color: #eee;
   border-radius: 10px;
   -moz-border-radius:10px;
   font-size: 12px;
-  margin: 20px;
-  padding:20px;
+  padding:5px;
+  margin:20px;
+  color:#333;
 }
-div.speaker div.photo-right {
+.speaker .photo-right {
   float: right;
 }
-div.speaker div.photo-left {
+.speaker .photo-left {
   float: left;
 }
-div.speaker img {
-  
+.speaker img {
+  width:220px;
 }
-div.speaker div.description-right {
-  
+.speaker .description-right {
+  text-align:right;
+  margin-right:228px;
+  margin-left:15px;
+  padding-bottom:10px;
 }
-div.speaker div.description-left {
-  
+.speaker .description-left {
+  margin-right:15px;
+  margin-left:228px;
+  padding-bottom:10px;
 }
-div.speaker p.name {
+.speaker p.name {
   font-weight: bold;
   font-size: 26px;
+  color:#114e70;
 }
+.speaker p {
+  margin:10px 0;
+}
+
+.speakers { }
+

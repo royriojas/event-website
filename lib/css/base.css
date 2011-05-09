@@ -90,7 +90,7 @@ ul.tab-header li a {
 .ie6 ul.tab-header li, 
 .ie7 ul.tab-header li {
   float:left;
-  width:149px;
+  width:148px;
 }
 .ie6 ul.tab-content li
 .ie7 ul.tab-content li {
@@ -198,9 +198,17 @@ a.logo span {
 
 .section {
   padding:1px;
+  font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
 }
 
+.home ul.tab-content {
+  background:none;
+  filter:none;
+}
+.ie ul.tab-header {
+  overflow:hidden;
+}
 
-
+html.not-ready body { display:none;}
 
 
