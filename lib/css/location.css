@@ -1,0 +1,28 @@
+div.locationInfo{
+    float: right;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 20px 20px 0 0;
+    width: 200px;
+}
+
+    div.locationInfo div.image{
+        margin: 20px 0 0 20px;
+    }
+    
+    div.locationInfo div.description{
+        padding: 15px;
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    div.locationInfo div.description p{
+        margin: 20px 0;
+    }
+
+div.map{
+    margin: 20px 0 0 20px;
+}
+
+
+
