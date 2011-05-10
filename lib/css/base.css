@@ -204,6 +204,7 @@ a.logo span {
 .home ul.tab-content {
   background:none;
   filter:none;
+  padding-top: 0;
 }
 .ie ul.tab-header {
   overflow:hidden;
@@ -211,4 +212,36 @@ a.logo span {
 
 html.not-ready body { display:none;}
 
+.home-banner {
+  background: #FFF url(assets/banner.png) no-repeat center center;
+  width:699px;
+  height:160px;
+  margin: 0 auto;
+}
+.footer {
+  font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  text-align:center;
+  padding:30px 10px;
+}
+.footer ul li a {
+  text-decoration:none;
+  color:#ddd;
+  font-size:12px;
+}
+.footer ul li {
+  display:inline-block;
+}
+.footer ul li > a:after {
+  content: " | ";
+}
+.footer ul li > a span {
+  padding:2px 5px;
+}
+.footer ul li > a:hover span {
+  background:#333333;
+ 
+}
 
+.footer ul li:last-of-type >a:after {
+  content: "";
+}
