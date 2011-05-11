@@ -205,6 +205,8 @@ a.logo span {
   background:none;
   filter:none;
   padding-top: 0;
+  width:750px;
+  padding:15px 0 0 0;
 }
 .ie ul.tab-header {
   overflow:hidden;
@@ -213,10 +215,11 @@ a.logo span {
 html.not-ready body { display:none;}
 
 .home-banner {
-  background: #FFF url(assets/banner.png) no-repeat center center;
-  width:699px;
-  height:160px;
+  background: url(assets/banner.png) no-repeat center center;
+  width:724px;
+  height:150px;
   margin: 0 auto;
+  position:relative;
 }
 .footer {
   font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
@@ -244,4 +247,34 @@ html.not-ready body { display:none;}
 
 .footer ul li:last-of-type >a:after {
   content: "";
+}
+
+.gallery-wrapper {
+  margin:0 auto;
+  margin-top:18px;
+  background:#fff;
+  width:699px;
+  padding:5px;
+  min-height:150px;
+}
+
+a.see-more {
+  background: url(assets/ver-mas.png) no-repeat center center;
+  width:86px;
+  height:26px;
+  position:absolute;
+  top:20px;
+  left:20px;
+}
+
+a.see-more span {
+  display:none;
+}
+
+.TDB {
+  padding:40px;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+  color:#333;
 }
