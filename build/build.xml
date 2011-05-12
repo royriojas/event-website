@@ -117,8 +117,10 @@
   <target name="publish">
     <delete dir="${publish.dir}" />
     <mkdir dir="${publish.dir}" />
-  	<copy todir="${publish.dir}" >
-      <fileset dir="${dist.dir}"/>
+  	<copy todir="${publish.dir}" verbose="yes">
+      <fileset dir="${dist.dir}" excludes="*.in"/>
+    </copy>
+    <copy file="../htaccess.in" tofile="${publish.dir}.htaccess" verbose="yes">
     </copy>
   </target>
   <target name="clean">
