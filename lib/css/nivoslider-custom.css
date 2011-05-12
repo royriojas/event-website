@@ -30,7 +30,6 @@
 	display:block;
 	width:10px;
 	height:10px;
-	background:url(bullets.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin-right:3px;
@@ -46,7 +45,6 @@
 	display:block;
 	width:32px;
 	height:34px;
-	background:url(arrows.png) no-repeat !important;
 	text-indent:-9999px;
 	border:0;
 	
